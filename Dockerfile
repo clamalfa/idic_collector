@@ -16,4 +16,6 @@ RUN ./setup_venv.sh && \
 
 COPY ./start-idic.sh ./
 
+RUN chmod +x ./start-idic.sh
+
 ENTRYPOINT ["./start-idic.sh"]
